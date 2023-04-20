@@ -1,1 +1,1 @@
-bacvkend for chatly
+bacvkend for chatly app
