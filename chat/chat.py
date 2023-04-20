@@ -1,13 +1,7 @@
-from flask import Flask
+from flask import Blueprint
 
-def create_app():
-    app = Flask(__name__)
-    # app.register_blueprint(chat)
-    return app    
-# from flask import Blueprint
+chat_bp = Blueprint('chat_bp', __name__)
 
-# chat = Blueprint('chat',__name__)
-
-# @chat.route('/hello')
-# def hello():
-#     return "hello world"
+@chat_bp.route('/hello')
+def hello():
+    return "hello world"

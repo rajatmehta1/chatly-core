@@ -1,6 +1,8 @@
+from flask import Flask
 from chat import chat
 
-app = chat.create_app()
+app = Flask(__name__)
+app.register_blueprint(chat.chat_bp)
 
 if __name__=='__main__':
     app.run()
